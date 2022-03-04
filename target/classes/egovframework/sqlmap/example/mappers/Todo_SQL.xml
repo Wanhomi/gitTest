@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="egovframework.example.homie.todo.service.impl.TodoMapper">
+
+<!-- 	<select id="specialOneAjax" statementType="CALLABLE" parameterType="hashmap" resultType="java.lang.String" > -->
+<!-- 	    <![CDATA[ -->
+<!-- 	    	IF EXISTS( -->
+<!-- 	    		SELECT body_id -->
+<!-- 	    		FROM NURI_SVC_OPTN.dbo.EVNT_DBPA_BODY -->
+<!-- 	    		WHERE CONVERT(date, RGST_DAY) = CONVERT(date,GETDATE()) -->
+<!-- 	    		AND CODE = #{code} -->
+<!-- 	    		AND HEAD_ID= #{head_id} -->
+<!-- 	    		AND B2C_MEMB_ID = #{b2c_id} -->
+<!-- 	    	) -->
+<!-- 	    	BEGIN  -->
+<!-- 	    		SELECT 'limit0' AS CODE -->
+<!-- 	    	END  -->
+	    	
+<!-- 	    	ELSE  -->
+<!-- 	    	BEGIN  -->
+<!-- 	    		IF ISNULL((SELECT TOP 1 HP_NUM FROM NURI_SVC_OPTN.DBO.TSAL_B2C_MEMB(nolock) WHERE B2C_MEMB_ID = #{b2c_id} AND delt_yn = 'N'), '') <> '' -->
+<!-- 	    		BEGIN  -->
+<!-- 					INSERT INTO NURI_SVC_OPTN.dbo.EVNT_DBPA_BODY -->
+<!-- 					(HEAD_ID, PAGE_URL, CNTT, B2C_MEMB_ID, B2C_MEMB_NM, HP_NUM, EMAIL, RGST_USER_ID, RGST_USER_NM, RGST_DAY, UPDT_USER_ID, UPDT_USER_NM, UPDT_DAY, DELT_YN, CODE) -->
+<!-- 					VALUES(#{head_id}, N'',#{checked}, #{b2c_id}, #{b2c_name}, (select top 1 HP_NUM from [NURI_SVC_OPTN].DBO.TSAL_B2C_MEMB(nolock) where B2C_MEMB_ID = #{b2c_id} AND delt_yn = 'N'), #{b2c_email}, #{b2c_id}, #{b2c_name}, getdate(),#{b2c_id}, #{b2c_name}, getdate(), N'N', 'A') -->
+					
+<!-- 					SELECT 'insertA' AS CODE -->
+<!-- 				END -->
+<!-- 				ELSE  -->
+<!-- 				BEGIN -->
+<!-- 					SELECT 'phone_err' AS CODE -->
+<!-- 				END -->
+<!-- 			END -->
+<!-- 		]]>	 -->
+<!--     </select> -->
+</mapper>
